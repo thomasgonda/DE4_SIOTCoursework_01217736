@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!--Custom CSS in main.css-->
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+        {% if title %}
+        <title>{{ title }} - BlameItOnTheWeather</title>
+        {% else %}
+        <title>Welcome to BlameItOnTheWeather</title>
+        {% endif %}
+    </head>
+    <body id="bootstrap-overrides">
+        <!--Header Bar-->
+        <header class="site-header">
+          <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top" style="background-color: #44aa3c;">
+            <div class="container">
+              <a class="navbar-brand mr-4" href="/">Blame It On The Weather</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            </div>
+          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/timeline">Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/analysis">Processing</a>
+            </li>
+
+        </ul>
+    </div>
+          </nav>
+        </header>
+
+
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+
+        <hr>
+    </body>
+</html>

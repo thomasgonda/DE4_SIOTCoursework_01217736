@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+
+{% block content %}
+    <h1>Timeline</h1>
+    </p1>All of the data collected.</p1>
+
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.css" rel="stylesheet">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.4.0.min.css" rel="stylesheet">
+    {{ the_div|safe }}
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+    {{ the_script|safe }}
+{% endblock %}

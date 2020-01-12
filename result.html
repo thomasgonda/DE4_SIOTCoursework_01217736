@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+
+{% block content %}
+
+<h1>Results</h1>
+<p1>Your selected date and time: <br><br> </p1>
+
+
+  <table border = 1>
+     {% for key, value in result.items() %}
+        <tr>
+           <th> {{ key }} </th>
+           <td> {{ value }} </td>
+        </tr>
+     {% endfor %}
+  </table>
+<p1><br>{{ message }}</p1>
+
+{% endblock %}
