@@ -3,8 +3,7 @@
 
 {% block content %}
     <h1>Analysis</h1>
-    </p1>The data can be normalised and looked at side by side. Upon visual inspection, there is
-    clear correlation between the peaks of the Weather Level and Tweet Count datasets. The correlation between Weather Level and Twitter Count is
+    </p1>The data can be normalised and looked at side by side. The correlation between the Apparent Temperature and Twitter Count is
     {{corr_weather_twitter}}. The correlation between the Weather Level and Tweet Sentiment is {{corr_weather_senti}}.</p1>
 
     <link href="http://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.css" rel="stylesheet">
@@ -27,9 +26,7 @@
     {{ the_script_2|safe }}
 
     <h2>Seasonality of the data</h2>
-    <p1>The time series can be broken down into their components; trend, seasonality and noise. Notable trends can be seen in
-        the increase of tweets over Christmas, the decrease in tweet sentiment over Christmas and the daily seasonal trends
-        shown in both datasets.</p1>
+    <p1>The time series can be broken down into their components; trend, seasonality and noise. .</p1>
     <!--<h3 style="text-align:left;">  Weather-->
     <!--<span style="float:center;"> Twitter </span>-->
     <!--<span style="float:right;"> Tweet Sentiment </span></h3>-->
